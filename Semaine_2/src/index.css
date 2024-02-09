@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #141414;
+  background-image: radial-gradient(#262626 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+}
+
+.bgMain {
+  background-image: url("./assets/bgMain.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgFigma {
+  background-image: url("./assets/FigmaLayout.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .bgFigma {
+    background-size:cover;
+    background-position: 0 0;
+  }
+}
+
+.bgSpace {
+  background-image: url("./assets/bgSpace.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgSky {
+  background-image: url("./assets/sky.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgLine {
+  background-image: url("./assets/bgLine.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
