@@ -9,7 +9,7 @@ const Button = (props: any) => {
       whileHover={{ scale: 1.05, backgroundColor: "#338c89" }}
       whileTap={{ scale: 0.95, backgroundColor: "#338c89" }}
       transition={{ duration: 0.2 }}
-      className="cursor-pointer select-none bg-primary text-white px-10 py-4 w-fit rounded-md ease-in-out"
+      className="w-fit cursor-pointer select-none rounded-md bg-primary px-10 py-4 text-white ease-in-out"
     >
       {props.children}
     </motion.div>

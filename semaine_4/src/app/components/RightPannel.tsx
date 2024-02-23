@@ -52,8 +52,8 @@ const RightPannel = () => {
   };
   return (
     <>
-      <div className="flex flex-col gap-6 items-center self-end">
-        <p className="font-semibold text-[#A2A3B0] text-xl">
+      <div className="flex flex-col items-center gap-6 self-end">
+        <p className="text-xl font-semibold text-[#A2A3B0]">
           <span className="text-3xl text-space-cadet">
             {"0" + (imgIndex + 1)}
           </span>{" "}
@@ -80,7 +80,7 @@ const RightPannel = () => {
       </div>
       <AnimatePresence custom={direction}>
         <div className="relative items-center">
-          <div className="absolute left-1/2 -z-10 top-8 w-full h-[60%] bg-gradient-to-r from-transparent to-[#4B8785]"></div>
+          <div className="absolute left-1/2 top-8 -z-10 h-[60%] w-full bg-gradient-to-r from-transparent to-[#4B8785]"></div>
           <motion.div
             key={imgIndex}
             custom={direction}
@@ -107,13 +107,13 @@ const RightPannel = () => {
           </motion.div>
         </div>
       </AnimatePresence>
-      <div className="flex justify-between gap-2 items-center">
+      <div className="flex items-center justify-between gap-2">
         {images.map((image: string, index: number) => {
           return (
             <div
               key={index}
-              className={`cursor-pointer border-2 p-2 rounded-md ${
-                index === imgIndex ? "border-primary" : "border-french-gray"
+              className={`cursor-pointer rounded-md border-2 p-2 ${
+                index === imgIndex ? "border-primary" : ""
               }`}
               onClick={() => setImgIndex(index)}
             >

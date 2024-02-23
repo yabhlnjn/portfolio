@@ -6,7 +6,7 @@ const AddWishlist = () => {
   const [fill, setFill] = useState(false);
   return (
     <div
-      className="w-fit select-none group text-primary cursor-pointer flex items-center gap-4"
+      className="group flex w-fit cursor-pointer select-none items-center gap-4 text-primary"
       onClick={() => setFill(!fill)}
     >
       <Heart fill={fill ? "#3AA39F" : "transparent"} stroke="#3AA39F" />

@@ -12,7 +12,7 @@ const Navbar = () => {
   const [menuIsHovered, setMenuIsHovered] = React.useState(false);
 
   return (
-    <nav className="flex items-center justify-between pl-10 border-b select-none">
+    <nav className="flex select-none items-center justify-between border-b pl-10">
       <Image
         src="/logoCozy.svg"
         alt="Logo Cozy"
@@ -79,7 +79,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
-          className="cursor-pointer py-7 px-5 mr-5"
+          className="mr-5 cursor-pointer px-5 py-7"
           onMouseEnter={() => setSearchIsHovered(true)}
           onMouseLeave={() => setSearchIsHovered(false)}
         >
@@ -89,13 +89,13 @@ const Navbar = () => {
           />
         </motion.div>
 
-        <div className="w-full mx-auto before:content-[''] before:absolute top-0 before:h-20  before:w-0.1 before:border-l before:border-french-grey">
+        <div className="top-0 mx-auto w-full before:absolute before:h-20 before:border-l before:border-french-grey before:content-['']">
           <motion.div
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="w-full mx-auto py-7 px-10 cursor-pointer"
+            className="mx-auto w-full cursor-pointer px-10 py-7"
             onMouseEnter={() => setCartIsHovered(true)}
             onMouseLeave={() => setCartIsHovered(false)}
           >

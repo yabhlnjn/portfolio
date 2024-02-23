@@ -9,7 +9,7 @@ const LeftPannel = () => {
     <>
       <div>
         <Image src="back.svg" alt="Back" width={24} height={24} />
-        <p className="flex gap-2 text-space-cadet font-semibold mt-6">
+        <p className="mt-6 flex gap-2 font-semibold text-space-cadet">
           <span className="text-[#A2A3B0]">Chair</span>
           <span className="font-normal">/</span>
           <span>Meryl Lounge Chair</span>
@@ -17,8 +17,8 @@ const LeftPannel = () => {
       </div>
       <div>
         <p className="text-5xl font-bold">Meryl Lounge Chair</p>
-        <div className="flex justify-between items-center mt-[24px]">
-          <p className="font-semibold text-[24px]">$149.99</p>
+        <div className="mt-[24px] flex items-center justify-between">
+          <p className="text-[24px] font-semibold">$149.99</p>
           <div className="flex items-center gap-3">
             <Image src="/Stars.svg" alt="" width={86} height={14} />
             <p>
@@ -37,7 +37,7 @@ const LeftPannel = () => {
           alt=""
           width={132}
           height={28}
-          className="cursor-pointer my-8"
+          className="my-8 cursor-pointer"
         />
         <div className="flex gap-6">
           <Counter />
@@ -45,7 +45,7 @@ const LeftPannel = () => {
         </div>
       </div>
       <div>
-        <p className="mt-6 mb-12">
+        <p className="mb-12 mt-6">
           Free 3-5 day shipping • Tool-free assembly • 30-day trial
         </p>
         <div className="flex items-center justify-between">

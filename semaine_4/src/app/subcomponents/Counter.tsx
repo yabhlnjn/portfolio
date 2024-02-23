@@ -15,12 +15,12 @@ const Counter = () => {
   };
 
   return (
-    <div className="w-fit flex items-center gap-6 border border-cool-grey rounded-md font-semibold">
+    <div className="flex w-fit items-center gap-6 rounded-md border border-cool-grey font-semibold">
       <motion.button 
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.90}}
       transition={{ duration: 0.2 }}
-      onClick={() => handleDecrease()} className="py-4 px-4">
+      onClick={() => handleDecrease()} className="p-4">
         <Image src="/minus.svg" alt="Plus" width={20} height={20} />
       </motion.button>
       <p className="w-2 text-center">{items}</p>
@@ -28,7 +28,7 @@ const Counter = () => {
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.90}}
       transition={{ duration: 0.2 }}
-      onClick={() => handleIncrease()} className="py-4 px-4">
+      onClick={() => handleIncrease()} className="p-4">
         <Image src="/plus.svg" alt="Plus" width={20} height={20} />
       </motion.button>
     </div>
